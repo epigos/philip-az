@@ -39,12 +39,34 @@ jobs:
           static_site_generator: next
 
       - name: Install dependencies
-        run: pnpm install
+        run: pnpm install --frozen-lockfile
+
+      - name: Type check
+        run: pnpm exec tsc --noEmit
+        continue-on-error: true
 
       - name: Build
         run: pnpm build
         env:
+          GITHUB_PAGES: true
           NEXT_PUBLIC_PAGES_BASE_PATH: ${{ steps.setup_pages.outputs.base_path }}
+
+      - name: Verify build output
+        run: |
+          echo "=== Root directory ==="
+          ls -la
+          echo ""
+          echo "=== Checking for out directory ==="
+          if [ -d "./out" ]; then
+            echo "✓ out directory found"
+            ls -la ./out
+          else
+            echo "✗ out directory NOT found"
+            echo ""
+            echo "=== Checking for .next directory ==="
+            ls -la ./.next 2>/dev/null || echo ".next directory not found either"
+            exit 1
+          fi
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3

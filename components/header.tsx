@@ -66,7 +66,11 @@ export function Header() {
                                     "text-muted-foreground hover:text-foreground hover:bg-accent",
                                 )}
                                 target={item.target}
-                                rel={item.target ? "noopener noreferrer" : undefined}
+                                rel={
+                                    item.target
+                                        ? "noopener noreferrer"
+                                        : undefined
+                                }
                             >
                                 {item.name}
                             </a>

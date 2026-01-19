@@ -2,7 +2,13 @@
 
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { GraduationCap, Calendar, Trophy, Medal, ChevronDown } from "lucide-react";
+import {
+    GraduationCap,
+    Calendar,
+    Trophy,
+    Medal,
+    ChevronDown,
+} from "lucide-react";
 import { AnimatedSection } from "@/components/animated-section";
 import { Timeline, TimelineItem } from "@/components/timeline";
 import { Card, CardContent } from "@/components/ui/card";

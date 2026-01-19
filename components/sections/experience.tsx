@@ -4,7 +4,13 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { AnimatedSection } from "@/components/animated-section";
 import { experiences } from "@/data/site";
-import { Briefcase, MapPin, Calendar, ExternalLink, ChevronDown } from "lucide-react";
+import {
+    Briefcase,
+    MapPin,
+    Calendar,
+    ExternalLink,
+    ChevronDown,
+} from "lucide-react";
 import {
     Collapsible,
     CollapsibleContent,

@@ -49,8 +49,8 @@ export function CTASection({ className }: CTASectionProps) {
                         I&apos;m always excited to work on challenging projects
                         that push the boundaries of what&apos;s possible.
                         Whether you need a scalable backend system, ML
-                        infrastructure, or AI-driven automations —
-                        let&apos;s talk.
+                        infrastructure, or AI-driven automations — let&apos;s
+                        talk.
                     </p>
 
                     {/* CTA Buttons */}

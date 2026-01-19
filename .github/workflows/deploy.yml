@@ -43,23 +43,7 @@ jobs:
         run: pnpm build
         env:
           GITHUB_PAGES: true
-
-      - name: Verify build output
-        run: |
-          echo "=== Root directory ==="
-          ls -la
-          echo ""
-          echo "=== Checking for out directory ==="
-          if [ -d "./out" ]; then
-            echo "✓ out directory found"
-            ls -la ./out
-          else
-            echo "✗ out directory NOT found"
-            echo ""
-            echo "=== Checking for .next directory ==="
-            ls -la ./.next 2>/dev/null || echo ".next directory not found either"
-            exit 1
-          fi
+          NEXT_PUBLIC_PAGES_BASE_PATH: "/philip-az"
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3

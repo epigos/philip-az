@@ -8,6 +8,7 @@ import { ThemeToggle } from "@/components/theme-toggle";
 import { siteConfig, navigation } from "@/data/site";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
+import { appConfig } from "@/lib/config";
 
 export function Header() {
     const [isScrolled, setIsScrolled] = useState(false);
@@ -43,7 +44,7 @@ export function Header() {
                         whileHover={{ scale: 1.02 }}
                     >
                         <Image
-                            src={`${siteConfig.author.avatar}`}
+                            src={`${appConfig.basePath}${siteConfig.author.avatar}`}
                             alt={siteConfig.name}
                             width={40}
                             height={40}

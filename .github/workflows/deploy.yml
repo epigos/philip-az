@@ -46,6 +46,7 @@ jobs:
         run: pnpm build
         env:
           GITHUB_PAGES: true
+          NEXT_PUBLIC_GOOGLE_ANALYTICS_ID: "G-DBP7ELBV53"
       
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3

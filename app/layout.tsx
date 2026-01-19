@@ -3,6 +3,8 @@ import { Geist, Geist_Mono } from "next/font/google";
 import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
 import { siteConfig } from "@/data/site";
+import { GoogleAnalytics } from '@next/third-parties/google'
+
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 import { appConfig } from "@/lib/config";
@@ -109,6 +111,7 @@ export default function RootLayout({
                         <Footer />
                     </div>
                 </body>
+                <GoogleAnalytics gaId={appConfig.googleAnalyticsId} />
             </ThemeProvider>
         </html>
     );

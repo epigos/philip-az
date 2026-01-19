@@ -80,10 +80,11 @@ export const techStack = {
         { name: "Redis", icon: "redis" },
         { name: "Neo4j", icon: "neo4j" },
     ],
-    messaging: [
+    "Other tools": [
         { name: "Kafka", icon: "kafka" },
         { name: "RabbitMQ", icon: "rabbitmq" },
         { name: "SQS", icon: "sqs" },
+        { name: "gRPC", icon: "grpc" },
     ],
 };
 
@@ -391,9 +392,7 @@ export const education = [
         endDate: "2020",
         location: "London, UK",
         highlights: [
-            "Graduated with Distinction",
             "Thesis: Evolving State Representation Learning for vision based Deep Reinforcement Learning in autonomous driving environments",
-            "Honorary Visiting Fellow (2024)",
         ],
     },
     {
@@ -404,7 +403,9 @@ export const education = [
         startDate: "2008",
         endDate: "2012",
         location: "Cape Coast, Ghana",
-        highlights: [],
+        highlights: [
+            "Comprehensive undergraduate education in human anatomy, physiology, bioinformatics and biomedical sciences",
+        ],
     },
 ];
 

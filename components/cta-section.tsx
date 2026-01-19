@@ -22,7 +22,7 @@ export function CTASection({ className }: CTASectionProps) {
             <div className="absolute inset-0 bg-grid-pattern opacity-30" />
 
             <div className="container relative z-10 mx-auto px-4 sm:px-6">
-                <AnimatedSection className="max-w-3xl mx-auto text-center">
+                <AnimatedSection className="max-w-4xl mx-auto text-center">
                     {/* Badge */}
                     <motion.div
                         initial={{ opacity: 0, scale: 0.9 }}
@@ -45,11 +45,11 @@ export function CTASection({ className }: CTASectionProps) {
                     </h2>
 
                     {/* Description */}
-                    <p className="text-lg text-muted-foreground mb-10 max-w-2xl mx-auto leading-relaxed">
+                    <p className="text-lg text-muted-foreground mb-10 max-w-4xl mx-auto leading-relaxed">
                         I&apos;m always excited to work on challenging projects
                         that push the boundaries of what&apos;s possible.
-                        Whether you need a distributed system, ML
-                        infrastructure, or cloud-native architecture —
+                        Whether you need a scalable backend system, ML
+                        infrastructure, or AI-driven automations —
                         let&apos;s talk.
                     </p>
 

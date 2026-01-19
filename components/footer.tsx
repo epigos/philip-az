@@ -44,8 +44,7 @@ export function Footer() {
                         <span className="hidden sm:inline">•</span>
                         <span className="flex items-center gap-1">
                             Built with{" "}
-                            <Heart className="w-4 h-4 text-destructive fill-destructive" />{" "}
-                            using Next.js
+                            <Heart className="w-4 h-4 text-destructive fill-destructive" />
                         </span>
                     </div>
                 </div>

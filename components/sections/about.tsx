@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { motion } from "framer-motion";
 import { Brain, Boxes, Cog, Cpu, Bot } from "lucide-react";
 import { AnimatedSection } from "@/components/animated-section";
@@ -49,6 +50,17 @@ export function AboutSection() {
                             </span>
                         </h2>
                         <div className="space-y-4 text-muted-foreground leading-relaxed">
+                            <div className="float-right ml-6 mb-4">
+                                <div className="relative w-32 h-32 sm:w-40 sm:h-40 rounded-2xl overflow-hidden border-2 border-primary/20 shadow-lg">
+                                    <Image
+                                        src={siteConfig.author.avatar}
+                                        alt={siteConfig.author.name}
+                                        fill
+                                        className="object-cover"
+                                        priority
+                                    />
+                                </div>
+                            </div>
                             <p>{siteConfig.author.bio}</p>
                             <p>
                                 I specialise in architecting and implementing
